@@ -6,6 +6,11 @@
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
+<<<<<<< HEAD
+=======
+		<key>UIApplicationSupportsTabbedSceneCollection</key>
+		<false/>
+>>>>>>> xcdeworkspace-
 	</dict>
 </dict>
 </plist>
