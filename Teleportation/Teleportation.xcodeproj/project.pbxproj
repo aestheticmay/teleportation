@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AA2896BBE50009A314 /* AppDelegate.swift */; };
+		138139AD2896BBE50009A314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AC2896BBE50009A314 /* SceneDelegate.swift */; };
+		138139AF2896BBE50009A314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AE2896BBE50009A314 /* ViewController.swift */; };
+		138139B22896BBE50009A314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138139B02896BBE50009A314 /* Main.storyboard */; };
+		138139B42896BBF50009A314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138139B32896BBF50009A314 /* Assets.xcassets */; };
+		138139B72896BBF50009A314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138139B52896BBF50009A314 /* LaunchScreen.storyboard */; };
+		138139C22896BBF60009A314 /* TeleportationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139C12896BBF60009A314 /* TeleportationTests.swift */; };
+		138139CC2896BBF70009A314 /* TeleportationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139CB2896BBF70009A314 /* TeleportationUITests.swift */; };
+		138139CE2896BBF70009A314 /* TeleportationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139CD2896BBF70009A314 /* TeleportationUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		138139BE2896BBF60009A314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1381399F2896BBE50009A314 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138139A62896BBE50009A314;
+			remoteInfo = Teleportation;
+		};
+		138139C82896BBF70009A314 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1381399F2896BBE50009A314 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 138139A62896BBE50009A314;
+			remoteInfo = Teleportation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		138139A72896BBE50009A314 /* Teleportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		138139AA2896BBE50009A314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		138139AC2896BBE50009A314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		138139AE2896BBE50009A314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		138139B12896BBE50009A314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		138139B32896BBF50009A314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		138139B62896BBF50009A314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		138139B82896BBF50009A314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		138139BD2896BBF60009A314 /* TeleportationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleportationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		138139C12896BBF60009A314 /* TeleportationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportationTests.swift; sourceTree = "<group>"; };
+		138139C72896BBF70009A314 /* TeleportationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleportationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		138139CB2896BBF70009A314 /* TeleportationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportationUITests.swift; sourceTree = "<group>"; };
+		138139CD2896BBF70009A314 /* TeleportationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		138139A42896BBE50009A314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138139BA2896BBF60009A314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138139C42896BBF60009A314 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1381399E2896BBE50009A314 = {
+			isa = PBXGroup;
+			children = (
+				138139A92896BBE50009A314 /* Teleportation */,
+				138139C02896BBF60009A314 /* TeleportationTests */,
+				138139CA2896BBF70009A314 /* TeleportationUITests */,
+				138139A82896BBE50009A314 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		138139A82896BBE50009A314 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				138139A72896BBE50009A314 /* Teleportation.app */,
+				138139BD2896BBF60009A314 /* TeleportationTests.xctest */,
+				138139C72896BBF70009A314 /* TeleportationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		138139A92896BBE50009A314 /* Teleportation */ = {
+			isa = PBXGroup;
+			children = (
+				138139AA2896BBE50009A314 /* AppDelegate.swift */,
+				138139AC2896BBE50009A314 /* SceneDelegate.swift */,
+				138139AE2896BBE50009A314 /* ViewController.swift */,
+				138139B02896BBE50009A314 /* Main.storyboard */,
+				138139B32896BBF50009A314 /* Assets.xcassets */,
+				138139B52896BBF50009A314 /* LaunchScreen.storyboard */,
+				138139B82896BBF50009A314 /* Info.plist */,
+			);
+			path = Teleportation;
+			sourceTree = "<group>";
+		};
+		138139C02896BBF60009A314 /* TeleportationTests */ = {
+			isa = PBXGroup;
+			children = (
+				138139C12896BBF60009A314 /* TeleportationTests.swift */,
+			);
+			path = TeleportationTests;
+			sourceTree = "<group>";
+		};
+		138139CA2896BBF70009A314 /* TeleportationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				138139CB2896BBF70009A314 /* TeleportationUITests.swift */,
+				138139CD2896BBF70009A314 /* TeleportationUITestsLaunchTests.swift */,
+			);
+			path = TeleportationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		138139A62896BBE50009A314 /* Teleportation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138139D12896BBF70009A314 /* Build configuration list for PBXNativeTarget "Teleportation" */;
+			buildPhases = (
+				138139A32896BBE50009A314 /* Sources */,
+				138139A42896BBE50009A314 /* Frameworks */,
+				138139A52896BBE50009A314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Teleportation;
+			productName = Teleportation;
+			productReference = 138139A72896BBE50009A314 /* Teleportation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		138139BC2896BBF60009A314 /* TeleportationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138139D42896BBF70009A314 /* Build configuration list for PBXNativeTarget "TeleportationTests" */;
+			buildPhases = (
+				138139B92896BBF60009A314 /* Sources */,
+				138139BA2896BBF60009A314 /* Frameworks */,
+				138139BB2896BBF60009A314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				138139BF2896BBF60009A314 /* PBXTargetDependency */,
+			);
+			name = TeleportationTests;
+			productName = TeleportationTests;
+			productReference = 138139BD2896BBF60009A314 /* TeleportationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		138139C62896BBF60009A314 /* TeleportationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 138139D72896BBF70009A314 /* Build configuration list for PBXNativeTarget "TeleportationUITests" */;
+			buildPhases = (
+				138139C32896BBF60009A314 /* Sources */,
+				138139C42896BBF60009A314 /* Frameworks */,
+				138139C52896BBF60009A314 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				138139C92896BBF70009A314 /* PBXTargetDependency */,
+			);
+			name = TeleportationUITests;
+			productName = TeleportationUITests;
+			productReference = 138139C72896BBF70009A314 /* TeleportationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1381399F2896BBE50009A314 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					138139A62896BBE50009A314 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					138139BC2896BBF60009A314 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 138139A62896BBE50009A314;
+					};
+					138139C62896BBF60009A314 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 138139A62896BBE50009A314;
+					};
+				};
+			};
+			buildConfigurationList = 138139A22896BBE50009A314 /* Build configuration list for PBXProject "Teleportation" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1381399E2896BBE50009A314;
+			productRefGroup = 138139A82896BBE50009A314 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				138139A62896BBE50009A314 /* Teleportation */,
+				138139BC2896BBF60009A314 /* TeleportationTests */,
+				138139C62896BBF60009A314 /* TeleportationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		138139A52896BBE50009A314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138139B72896BBF50009A314 /* LaunchScreen.storyboard in Resources */,
+				138139B42896BBF50009A314 /* Assets.xcassets in Resources */,
+				138139B22896BBE50009A314 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138139BB2896BBF60009A314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138139C52896BBF60009A314 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		138139A32896BBE50009A314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138139AF2896BBE50009A314 /* ViewController.swift in Sources */,
+				138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */,
+				138139AD2896BBE50009A314 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138139B92896BBF60009A314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138139C22896BBF60009A314 /* TeleportationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		138139C32896BBF60009A314 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				138139CC2896BBF70009A314 /* TeleportationUITests.swift in Sources */,
+				138139CE2896BBF70009A314 /* TeleportationUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		138139BF2896BBF60009A314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138139A62896BBE50009A314 /* Teleportation */;
+			targetProxy = 138139BE2896BBF60009A314 /* PBXContainerItemProxy */;
+		};
+		138139C92896BBF70009A314 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 138139A62896BBE50009A314 /* Teleportation */;
+			targetProxy = 138139C82896BBF70009A314 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		138139B02896BBE50009A314 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				138139B12896BBE50009A314 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		138139B52896BBF50009A314 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				138139B62896BBF50009A314 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		138139CF2896BBF70009A314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		138139D02896BBF70009A314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		138139D22896BBF70009A314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Teleportation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.Teleportation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		138139D32896BBF70009A314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Teleportation/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.Teleportation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		138139D52896BBF70009A314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.TeleportationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleportation.app/Teleportation";
+			};
+			name = Debug;
+		};
+		138139D62896BBF70009A314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.TeleportationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Teleportation.app/Teleportation";
+			};
+			name = Release;
+		};
+		138139D82896BBF70009A314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.TeleportationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Teleportation;
+			};
+			name = Debug;
+		};
+		138139D92896BBF70009A314 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MK.TeleportationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Teleportation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		138139A22896BBE50009A314 /* Build configuration list for PBXProject "Teleportation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138139CF2896BBF70009A314 /* Debug */,
+				138139D02896BBF70009A314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138139D12896BBF70009A314 /* Build configuration list for PBXNativeTarget "Teleportation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138139D22896BBF70009A314 /* Debug */,
+				138139D32896BBF70009A314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138139D42896BBF70009A314 /* Build configuration list for PBXNativeTarget "TeleportationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138139D52896BBF70009A314 /* Debug */,
+				138139D62896BBF70009A314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		138139D72896BBF70009A314 /* Build configuration list for PBXNativeTarget "TeleportationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				138139D82896BBF70009A314 /* Debug */,
+				138139D92896BBF70009A314 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1381399F2896BBE50009A314 /* Project object */;
+}
