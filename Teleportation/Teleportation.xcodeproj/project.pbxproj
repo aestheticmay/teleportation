@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AA2896BBE50009A314 /* AppDelegate.swift */; };
-		138139AD2896BBE50009A314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AC2896BBE50009A314 /* SceneDelegate.swift */; };
 		138139AF2896BBE50009A314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AE2896BBE50009A314 /* ViewController.swift */; };
-		138139B22896BBE50009A314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138139B02896BBE50009A314 /* Main.storyboard */; };
 		138139B42896BBF50009A314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138139B32896BBF50009A314 /* Assets.xcassets */; };
 		138139B72896BBF50009A314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138139B52896BBF50009A314 /* LaunchScreen.storyboard */; };
 		138139C22896BBF60009A314 /* TeleportationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139C12896BBF60009A314 /* TeleportationTests.swift */; };
@@ -38,9 +36,7 @@
 /* Begin PBXFileReference section */
 		138139A72896BBE50009A314 /* Teleportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138139AA2896BBE50009A314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		138139AC2896BBE50009A314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		138139AE2896BBE50009A314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		138139B12896BBE50009A314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		138139B32896BBF50009A314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		138139B62896BBF50009A314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		138139B82896BBF50009A314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,9 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				138139AA2896BBE50009A314 /* AppDelegate.swift */,
-				138139AC2896BBE50009A314 /* SceneDelegate.swift */,
 				138139AE2896BBE50009A314 /* ViewController.swift */,
-				138139B02896BBE50009A314 /* Main.storyboard */,
 				138139B32896BBF50009A314 /* Assets.xcassets */,
 				138139B52896BBF50009A314 /* LaunchScreen.storyboard */,
 				138139B82896BBF50009A314 /* Info.plist */,
@@ -233,7 +227,6 @@
 			files = (
 				138139B72896BBF50009A314 /* LaunchScreen.storyboard in Resources */,
 				138139B42896BBF50009A314 /* Assets.xcassets in Resources */,
-				138139B22896BBE50009A314 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +253,6 @@
 			files = (
 				138139AF2896BBE50009A314 /* ViewController.swift in Sources */,
 				138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */,
-				138139AD2896BBE50009A314 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +289,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		138139B02896BBE50009A314 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				138139B12896BBE50009A314 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		138139B52896BBF50009A314 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -441,7 +425,6 @@
 				INFOPLIST_FILE = Teleportation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,7 +451,6 @@
 				INFOPLIST_FILE = Teleportation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
