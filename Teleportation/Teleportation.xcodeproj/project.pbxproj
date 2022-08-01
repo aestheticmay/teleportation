@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133554F628970C4200920DF6 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133554F528970C4200920DF6 /* MainScreenVC.swift */; };
 		138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AA2896BBE50009A314 /* AppDelegate.swift */; };
-		138139AD2896BBE50009A314 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AC2896BBE50009A314 /* SceneDelegate.swift */; };
 		138139AF2896BBE50009A314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AE2896BBE50009A314 /* ViewController.swift */; };
-		138139B22896BBE50009A314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138139B02896BBE50009A314 /* Main.storyboard */; };
 		138139B42896BBF50009A314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138139B32896BBF50009A314 /* Assets.xcassets */; };
 		138139B72896BBF50009A314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138139B52896BBF50009A314 /* LaunchScreen.storyboard */; };
 		138139C22896BBF60009A314 /* TeleportationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139C12896BBF60009A314 /* TeleportationTests.swift */; };
 		138139CC2896BBF70009A314 /* TeleportationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139CB2896BBF70009A314 /* TeleportationUITests.swift */; };
 		138139CE2896BBF70009A314 /* TeleportationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139CD2896BBF70009A314 /* TeleportationUITestsLaunchTests.swift */; };
+		685F055751ACC58EF9474340 /* Pods_Teleportation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC0E181CCC84824314C8A74 /* Pods_Teleportation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133554F528970C4200920DF6 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
 		138139A72896BBE50009A314 /* Teleportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138139AA2896BBE50009A314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		138139AC2896BBE50009A314 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		138139AE2896BBE50009A314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		138139B12896BBE50009A314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		138139B32896BBF50009A314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		138139B62896BBF50009A314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		138139B82896BBF50009A314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +48,9 @@
 		138139C72896BBF70009A314 /* TeleportationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TeleportationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		138139CB2896BBF70009A314 /* TeleportationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportationUITests.swift; sourceTree = "<group>"; };
 		138139CD2896BBF70009A314 /* TeleportationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleportationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CC0E181CCC84824314C8A74 /* Pods_Teleportation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleportation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7651BA2ECEE6988F92C77699 /* Pods-Teleportation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleportation.release.xcconfig"; path = "Target Support Files/Pods-Teleportation/Pods-Teleportation.release.xcconfig"; sourceTree = "<group>"; };
+		EFAB0E0B717648834D3BD79A /* Pods-Teleportation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleportation.debug.xcconfig"; path = "Target Support Files/Pods-Teleportation/Pods-Teleportation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				685F055751ACC58EF9474340 /* Pods_Teleportation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132D074D2896FA3F00565199 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				133554F528970C4200920DF6 /* MainScreenVC.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
 		1381399E2896BBE50009A314 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +94,8 @@
 				138139C02896BBF60009A314 /* TeleportationTests */,
 				138139CA2896BBF70009A314 /* TeleportationUITests */,
 				138139A82896BBE50009A314 /* Products */,
+				4F1E79A66E25F0DBA5C781AA /* Pods */,
+				2BD57FB8CE5EBCB26D3F2E5C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +112,9 @@
 		138139A92896BBE50009A314 /* Teleportation */ = {
 			isa = PBXGroup;
 			children = (
+				132D074D2896FA3F00565199 /* MainScreen */,
 				138139AA2896BBE50009A314 /* AppDelegate.swift */,
-				138139AC2896BBE50009A314 /* SceneDelegate.swift */,
 				138139AE2896BBE50009A314 /* ViewController.swift */,
-				138139B02896BBE50009A314 /* Main.storyboard */,
 				138139B32896BBF50009A314 /* Assets.xcassets */,
 				138139B52896BBF50009A314 /* LaunchScreen.storyboard */,
 				138139B82896BBF50009A314 /* Info.plist */,
@@ -127,6 +139,23 @@
 			path = TeleportationUITests;
 			sourceTree = "<group>";
 		};
+		2BD57FB8CE5EBCB26D3F2E5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CC0E181CCC84824314C8A74 /* Pods_Teleportation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F1E79A66E25F0DBA5C781AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFAB0E0B717648834D3BD79A /* Pods-Teleportation.debug.xcconfig */,
+				7651BA2ECEE6988F92C77699 /* Pods-Teleportation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 138139D12896BBF70009A314 /* Build configuration list for PBXNativeTarget "Teleportation" */;
 			buildPhases = (
+				539545B7DF2902DDA1BE224F /* [CP] Check Pods Manifest.lock */,
 				138139A32896BBE50009A314 /* Sources */,
 				138139A42896BBE50009A314 /* Frameworks */,
 				138139A52896BBE50009A314 /* Resources */,
+				25481E60943F7D4A1F4D840E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +264,6 @@
 			files = (
 				138139B72896BBF50009A314 /* LaunchScreen.storyboard in Resources */,
 				138139B42896BBF50009A314 /* Assets.xcassets in Resources */,
-				138139B22896BBE50009A314 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +283,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25481E60943F7D4A1F4D840E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Teleportation/Pods-Teleportation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Teleportation/Pods-Teleportation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Teleportation/Pods-Teleportation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		539545B7DF2902DDA1BE224F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teleportation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		138139A32896BBE50009A314 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133554F628970C4200920DF6 /* MainScreenVC.swift in Sources */,
 				138139AF2896BBE50009A314 /* ViewController.swift in Sources */,
 				138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */,
-				138139AD2896BBE50009A314 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +369,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		138139B02896BBE50009A314 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				138139B12896BBE50009A314 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		138139B52896BBF50009A314 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,6 +496,7 @@
 		};
 		138139D22896BBF70009A314 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAB0E0B717648834D3BD79A /* Pods-Teleportation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -441,7 +506,6 @@
 				INFOPLIST_FILE = Teleportation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,12 +517,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		138139D32896BBF70009A314 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7651BA2ECEE6988F92C77699 /* Pods-Teleportation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -468,7 +533,6 @@
 				INFOPLIST_FILE = Teleportation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,7 +544,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
