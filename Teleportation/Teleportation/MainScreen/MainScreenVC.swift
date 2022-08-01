@@ -51,7 +51,7 @@ final class MainScreenVC: UIViewController {
     
     private let backgroundColor: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor.lightGray.withAlphaComponent(0.4)
+        view.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
