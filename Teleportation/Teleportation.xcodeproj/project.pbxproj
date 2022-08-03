@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133554F628970C4200920DF6 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133554F528970C4200920DF6 /* MainScreenVC.swift */; };
 		138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AA2896BBE50009A314 /* AppDelegate.swift */; };
 		138139AF2896BBE50009A314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AE2896BBE50009A314 /* ViewController.swift */; };
 		138139B42896BBF50009A314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138139B32896BBF50009A314 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133554F528970C4200920DF6 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
 		138139A72896BBE50009A314 /* Teleportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138139AA2896BBE50009A314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		138139AE2896BBE50009A314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		132D074D2896FA3F00565199 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				133554F528970C4200920DF6 /* MainScreenVC.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
 		1381399E2896BBE50009A314 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		138139A92896BBE50009A314 /* Teleportation */ = {
 			isa = PBXGroup;
 			children = (
+				132D074D2896FA3F00565199 /* MainScreen */,
 				138139AA2896BBE50009A314 /* AppDelegate.swift */,
 				138139AE2896BBE50009A314 /* ViewController.swift */,
 				138139B32896BBF50009A314 /* Assets.xcassets */,
@@ -142,7 +153,6 @@
 				EFAB0E0B717648834D3BD79A /* Pods-Teleportation.debug.xcconfig */,
 				7651BA2ECEE6988F92C77699 /* Pods-Teleportation.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -320,6 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133554F628970C4200920DF6 /* MainScreenVC.swift in Sources */,
 				138139AF2896BBE50009A314 /* ViewController.swift in Sources */,
 				138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */,
 			);
@@ -506,7 +517,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -533,7 +544,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
