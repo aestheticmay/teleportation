@@ -11,7 +11,7 @@ final class ContinentsTableCell: UITableViewCell {
     
     // MARK: Private Properties
     
-    private let continent: UILabel = {
+    var continent: UILabel = {
         let lbl = UILabel()
         lbl.textColor = UIColor.darkGray
         lbl.numberOfLines = 0
@@ -36,8 +36,8 @@ final class ContinentsTableCell: UITableViewCell {
         addSubview(continent)
         
         continent.snp.makeConstraints { make in
-            make.top.bottom.equalToSuperview().inset(10)
-            make.leading.trailing.equalToSuperview().inset(15)
+            make.top.bottom.equalToSuperview().inset(30)
+            make.leading.trailing.equalToSuperview().inset(45)
         }
     }
 }

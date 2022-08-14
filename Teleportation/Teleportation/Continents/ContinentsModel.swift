@@ -25,6 +25,5 @@ struct ContinentMiddle: Codable {
 
 struct ContinentsResponse: Codable {
     let name: String
-    let href: String
 }
 

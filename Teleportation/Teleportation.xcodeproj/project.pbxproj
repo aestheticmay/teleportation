@@ -18,6 +18,7 @@
 		13BB7316289AA2320074C24B /* ContinentsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB7315289AA2320074C24B /* ContinentsTableCell.swift */; };
 		13BB7318289AA2EA0074C24B /* ContinentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB7317289AA2EA0074C24B /* ContinentsModel.swift */; };
 		13BB731A289AA73E0074C24B /* ContinentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB7319289AA73E0074C24B /* ContinentsTableViewController.swift */; };
+		13D7420A28A84DBE00C61157 /* ContinentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D7420928A84DBE00C61157 /* ContinentsCoordinator.swift */; };
 		685F055751ACC58EF9474340 /* Pods_Teleportation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC0E181CCC84824314C8A74 /* Pods_Teleportation.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		13BB7315289AA2320074C24B /* ContinentsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsTableCell.swift; sourceTree = "<group>"; };
 		13BB7317289AA2EA0074C24B /* ContinentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsModel.swift; sourceTree = "<group>"; };
 		13BB7319289AA73E0074C24B /* ContinentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsTableViewController.swift; sourceTree = "<group>"; };
+		13D7420928A84DBE00C61157 /* ContinentsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsCoordinator.swift; sourceTree = "<group>"; };
 		3CC0E181CCC84824314C8A74 /* Pods_Teleportation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleportation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7651BA2ECEE6988F92C77699 /* Pods-Teleportation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleportation.release.xcconfig"; path = "Target Support Files/Pods-Teleportation/Pods-Teleportation.release.xcconfig"; sourceTree = "<group>"; };
 		EFAB0E0B717648834D3BD79A /* Pods-Teleportation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleportation.debug.xcconfig"; path = "Target Support Files/Pods-Teleportation/Pods-Teleportation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		138139A92896BBE50009A314 /* Teleportation */ = {
 			isa = PBXGroup;
 			children = (
+				13D7420828A84D9200C61157 /* Coordinators */,
 				13BB7314289AA2170074C24B /* Continents */,
 				132D074D2896FA3F00565199 /* MainScreen */,
 				138139AA2896BBE50009A314 /* AppDelegate.swift */,
@@ -154,6 +157,14 @@
 				13BB7319289AA73E0074C24B /* ContinentsTableViewController.swift */,
 			);
 			path = Continents;
+			sourceTree = "<group>";
+		};
+		13D7420828A84D9200C61157 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				13D7420928A84DBE00C61157 /* ContinentsCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		2BD57FB8CE5EBCB26D3F2E5C /* Frameworks */ = {
@@ -348,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				133554F628970C4200920DF6 /* MainScreenVC.swift in Sources */,
+				13D7420A28A84DBE00C61157 /* ContinentsCoordinator.swift in Sources */,
 				13BB7316289AA2320074C24B /* ContinentsTableCell.swift in Sources */,
 				13BB731A289AA73E0074C24B /* ContinentsTableViewController.swift in Sources */,
 				138139AF2896BBE50009A314 /* ViewController.swift in Sources */,
