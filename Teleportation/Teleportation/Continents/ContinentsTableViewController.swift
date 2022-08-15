@@ -26,7 +26,7 @@ final class ContinentsTableViewController: UIViewController {
         return tbv
     }()
     
-    // MARK: Public Methods
+    // MARK: Life-cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
