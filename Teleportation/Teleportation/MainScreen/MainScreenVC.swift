@@ -12,46 +12,51 @@ final class MainScreenVC: UIViewController {
     
     // MARK: Private Properties
 
-    private let continent: UIButton = {
+    private let characters: UIButton = {
         let btn = UIButton()
-        btn.layer.cornerRadius = 20
+        btn.layer.cornerRadius = 18
         btn.clipsToBounds = true
-        btn.titleLabel?.font = UIFont(name: "SystemFont", size: 30)
+        btn.titleLabel?.font = UIFont(name: "SystemFont", size: 25)
         btn.layer.borderWidth = 1
-        btn.setTitle("Continents", for: .normal)
-        btn.backgroundColor = UIColor.brown.withAlphaComponent(0.5)
+        btn.backgroundColor = UIColor.white
+        btn.setTitle("  Characters  ", for: .normal)
+        btn.setTitleColor(UIColor.darkGray, for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
     
-    private let country: UIButton = {
+    private let locations: UIButton = {
         let btn = UIButton()
-        btn.layer.cornerRadius = 20
+        btn.layer.cornerRadius = 18
         btn.clipsToBounds = true
-        btn.titleLabel?.font = UIFont(name: "SystemFont", size: 30)
+        btn.titleLabel?.font = UIFont(name: "SystemFont", size: 25)
         btn.layer.borderWidth = 1
-        btn.setTitle("Countries", for: .normal)
-        btn.backgroundColor = UIColor.systemYellow.withAlphaComponent(0.5)
+        btn.setTitle("  Locations  ", for: .normal)
+        btn.backgroundColor = UIColor.white
+        btn.titleLabel?.textColor = UIColor.darkGray
+        btn.setTitleColor(UIColor.darkGray, for: .normal)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
     
-    private let city: UIButton = {
+    private let episodes: UIButton = {
         let btn = UIButton()
-        btn.layer.cornerRadius = 20
+        btn.layer.cornerRadius = 18
         btn.clipsToBounds = true
-        btn.setTitle("Cities", for: .normal)
+        btn.setTitle("  Episodes  ", for: .normal)
         btn.titleLabel?.numberOfLines = 0
-        btn.titleLabel?.font = UIFont(name: "SystemFont", size: 30)
+        btn.titleLabel?.font = UIFont(name: "SystemFont", size: 25)
         btn.layer.borderWidth = 1
-        btn.backgroundColor = UIColor.systemGreen.withAlphaComponent(0.5)
+        btn.backgroundColor = UIColor.white
+        btn.setTitleColor(UIColor.darkGray, for: .normal)
+        btn.titleLabel?.textColor = UIColor.darkGray
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
     }()
     
-    private let backgroundColor: UIView = {
-        let view = UIView()
-        view.backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
+    private let backgroundImage: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "rickandmorty")
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -66,31 +71,31 @@ final class MainScreenVC: UIViewController {
     // MARK: Private Methods
 
     private func setupLayout() {
-        view.addSubview(backgroundColor)
-        view.addSubview(continent)
-        view.addSubview(country)
-        view.addSubview(city)
+        view.addSubview(backgroundImage)
+        view.addSubview(characters)
+        view.addSubview(locations)
+        view.addSubview(episodes)
         
-        backgroundColor.snp.makeConstraints { make in
+        backgroundImage.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview()
             make.leading.trailing.equalToSuperview()
         }
         
-        continent.snp.makeConstraints { make in
+        characters.snp.makeConstraints { make in
             make.top.equalToSuperview().inset(100)
-            make.leading.equalToSuperview().inset(40)
-            make.bottom.equalTo(country.snp.top).inset(-150)
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(locations.snp.top).inset(-50)
         }
         
-        country.snp.makeConstraints { make in
-            make.top.equalTo(continent.snp.bottom).inset(150)
-            make.leading.equalToSuperview().inset(90)
-            make.bottom.equalTo(city.snp.top).inset(-150)
+        locations.snp.makeConstraints { make in
+            make.top.equalTo(characters.snp.bottom).inset(50)
+            make.centerX.equalToSuperview()
+            make.bottom.equalTo(episodes.snp.top).inset(-50)
         }
         
-        city.snp.makeConstraints { make in
-            make.top.equalTo(country.snp.bottom).inset(100)
-            make.leading.equalToSuperview().inset(40)
+        episodes.snp.makeConstraints { make in
+            make.top.equalTo(locations.snp.bottom).inset(50)
+            make.centerX.equalToSuperview()
         }
     }
 }
