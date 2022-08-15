@@ -11,8 +11,8 @@ final class ContinentsTableViewController: UIViewController {
     
     // MARK: Public Properties
 
-    var continentsArray = [ContinentRoot]()
-    let json = "https://api.teleport.org/api/continents/" // data source array
+    var continentsArray = [ContinentsResponse]()
+    let json = "https://api.teleport.org/api/continents/"
     
     // MARK: Private Properties
     
@@ -30,7 +30,8 @@ final class ContinentsTableViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchApi { result in
+        parsingJson { data in
+            self.continentsArray = data
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -43,29 +44,27 @@ final class ContinentsTableViewController: UIViewController {
     
     // MARK: Private Methods
     
-    private func fetchApi(completion: @escaping (ContinentRoot) -> ()) {
-        let url = URL(string: json)
-        guard url != nil else {
-            print("Error")
-            return
-        }
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: url!) { data, response, error in
-            guard let data = data else {
-                print("Data was nil")
-                return
-            }
-            guard let continentsList = try? JSONDecoder().decode(ContinentRoot.self, from: data) else {
-                print("Couldn't decode JSON")
-                return
-            }
-            self.continentsArray.append(continentsList)
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
-        dataTask.resume()
-    }
+    private func parsingJson(completion: @escaping ([ContinentsResponse])->()) {
+           let url = URL(string: json)
+           guard url != nil else {
+               print("error")
+               return
+           }
+           let session = URLSession.shared
+           let dataTask = session.dataTask(with: url!) { data, response, error in
+               if error == nil, data != nil {
+                   let decoder = JSONDecoder()
+                   do {
+                       let parsingData = try decoder.decode(ContinentRoot.self, from: data!)
+                       completion(parsingData.links.continentItems)
+                   } catch {
+                       print("Parsing Error")
+                   }
+               }
+           }
+           dataTask.resume()
+       }
+
     
     private func setupLayout() {
         view.addSubview(tableView)
@@ -85,10 +84,8 @@ extension ContinentsTableViewController: UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContinentsTableViewController", for: indexPath)
-        let model = continentsArray[indexPath.row].links.continentItems
-        let model2 = model[indexPath.row].name
-        print("Model: \(model2)")
-        cell.textLabel?.text = model2
+        let model = continentsArray[indexPath.row].name
+        cell.textLabel?.text = model
         return cell
     }
 }
