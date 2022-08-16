@@ -7,4 +7,6 @@
 
 import UIKit
 
+final class ContinentsCoordinator {
 
+}

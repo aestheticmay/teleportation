@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		133554F628970C4200920DF6 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133554F528970C4200920DF6 /* MainScreenVC.swift */; };
 		138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AA2896BBE50009A314 /* AppDelegate.swift */; };
-		138139AF2896BBE50009A314 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139AE2896BBE50009A314 /* ViewController.swift */; };
 		138139B42896BBF50009A314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 138139B32896BBF50009A314 /* Assets.xcassets */; };
 		138139B72896BBF50009A314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 138139B52896BBF50009A314 /* LaunchScreen.storyboard */; };
 		138139C22896BBF60009A314 /* TeleportationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138139C12896BBF60009A314 /* TeleportationTests.swift */; };
@@ -19,6 +18,7 @@
 		13BB7318289AA2EA0074C24B /* ContinentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB7317289AA2EA0074C24B /* ContinentsModel.swift */; };
 		13BB731A289AA73E0074C24B /* ContinentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BB7319289AA73E0074C24B /* ContinentsTableViewController.swift */; };
 		13D7420A28A84DBE00C61157 /* ContinentsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D7420928A84DBE00C61157 /* ContinentsCoordinator.swift */; };
+		13D7421428AA6CF400C61157 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D7421328AA6CF400C61157 /* Coordinator.swift */; };
 		685F055751ACC58EF9474340 /* Pods_Teleportation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC0E181CCC84824314C8A74 /* Pods_Teleportation.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,6 @@
 		133554F528970C4200920DF6 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
 		138139A72896BBE50009A314 /* Teleportation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teleportation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		138139AA2896BBE50009A314 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		138139AE2896BBE50009A314 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		138139B32896BBF50009A314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		138139B62896BBF50009A314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		138139B82896BBF50009A314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		13BB7317289AA2EA0074C24B /* ContinentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsModel.swift; sourceTree = "<group>"; };
 		13BB7319289AA73E0074C24B /* ContinentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsTableViewController.swift; sourceTree = "<group>"; };
 		13D7420928A84DBE00C61157 /* ContinentsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentsCoordinator.swift; sourceTree = "<group>"; };
+		13D7421328AA6CF400C61157 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		3CC0E181CCC84824314C8A74 /* Pods_Teleportation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teleportation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7651BA2ECEE6988F92C77699 /* Pods-Teleportation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleportation.release.xcconfig"; path = "Target Support Files/Pods-Teleportation/Pods-Teleportation.release.xcconfig"; sourceTree = "<group>"; };
 		EFAB0E0B717648834D3BD79A /* Pods-Teleportation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teleportation.debug.xcconfig"; path = "Target Support Files/Pods-Teleportation/Pods-Teleportation.debug.xcconfig"; sourceTree = "<group>"; };
@@ -120,11 +120,11 @@
 		138139A92896BBE50009A314 /* Teleportation */ = {
 			isa = PBXGroup;
 			children = (
+				13D7421228AA6CD900C61157 /* Helpers */,
 				13D7420828A84D9200C61157 /* Coordinators */,
 				13BB7314289AA2170074C24B /* Continents */,
 				132D074D2896FA3F00565199 /* MainScreen */,
 				138139AA2896BBE50009A314 /* AppDelegate.swift */,
-				138139AE2896BBE50009A314 /* ViewController.swift */,
 				138139B32896BBF50009A314 /* Assets.xcassets */,
 				138139B52896BBF50009A314 /* LaunchScreen.storyboard */,
 				138139B82896BBF50009A314 /* Info.plist */,
@@ -165,6 +165,14 @@
 				13D7420928A84DBE00C61157 /* ContinentsCoordinator.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		13D7421228AA6CD900C61157 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				13D7421328AA6CF400C61157 /* Coordinator.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2BD57FB8CE5EBCB26D3F2E5C /* Frameworks */ = {
@@ -358,11 +366,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13D7421428AA6CF400C61157 /* Coordinator.swift in Sources */,
 				133554F628970C4200920DF6 /* MainScreenVC.swift in Sources */,
 				13D7420A28A84DBE00C61157 /* ContinentsCoordinator.swift in Sources */,
 				13BB7316289AA2320074C24B /* ContinentsTableCell.swift in Sources */,
 				13BB731A289AA73E0074C24B /* ContinentsTableViewController.swift in Sources */,
-				138139AF2896BBE50009A314 /* ViewController.swift in Sources */,
 				138139AB2896BBE50009A314 /* AppDelegate.swift in Sources */,
 				13BB7318289AA2EA0074C24B /* ContinentsModel.swift in Sources */,
 			);

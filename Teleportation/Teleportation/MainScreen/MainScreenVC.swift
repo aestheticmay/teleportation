@@ -18,7 +18,7 @@ final class MainScreenVC: UIViewController {
         btn.clipsToBounds = true
         btn.titleLabel?.font = UIFont(name: "SystemFont", size: 30)
         btn.layer.borderWidth = 1
-        btn.setTitle("Continents", for: .normal)
+        btn.setTitle("  Continents  ", for: .normal)
         btn.backgroundColor = UIColor.brown.withAlphaComponent(0.5)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
@@ -30,7 +30,7 @@ final class MainScreenVC: UIViewController {
         btn.clipsToBounds = true
         btn.titleLabel?.font = UIFont(name: "SystemFont", size: 30)
         btn.layer.borderWidth = 1
-        btn.setTitle("Countries", for: .normal)
+        btn.setTitle("  Countries  ", for: .normal)
         btn.backgroundColor = UIColor.systemYellow.withAlphaComponent(0.5)
         btn.translatesAutoresizingMaskIntoConstraints = false
         return btn
@@ -40,7 +40,7 @@ final class MainScreenVC: UIViewController {
         let btn = UIButton()
         btn.layer.cornerRadius = 20
         btn.clipsToBounds = true
-        btn.setTitle("Cities", for: .normal)
+        btn.setTitle("  Cities  ", for: .normal)
         btn.titleLabel?.numberOfLines = 0
         btn.titleLabel?.font = UIFont(name: "SystemFont", size: 30)
         btn.layer.borderWidth = 1
@@ -61,9 +61,18 @@ final class MainScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayout()
+        navigation()
     }
     
     // MARK: Private Methods
+    
+    @objc func showContinents() {
+        self.navigationController?.pushViewController(ContinentsTableViewController(), animated: false)
+    }
+    
+    private func navigation() {
+        continent.addTarget(self, action: #selector(showContinents), for: UIControl.Event.touchUpInside)
+    }
 
     private func setupLayout() {
         view.addSubview(backgroundColor)

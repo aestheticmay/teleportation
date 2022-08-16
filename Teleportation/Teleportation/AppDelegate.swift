@@ -11,14 +11,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    var navigationController = UINavigationController()
     static var deviceOrientation: UIInterfaceOrientationMask = .portrait
-   // private var tabbar = TabBarCoordinator()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        window = UIWindow(frame: UIScreen.main.bounds)
-     //   window?.rootViewController = tabbar.start()
-        window?.rootViewController = ContinentsTableViewController()
-        window?.makeKeyAndVisible()
+        let viewController = MainScreenVC()
+        self.navigationController = UINavigationController(rootViewController: viewController)
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = self.navigationController
+        self.window?.backgroundColor = UIColor.white
+        self.window?.makeKeyAndVisible()
         return true
     }
 }
